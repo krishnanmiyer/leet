@@ -19,8 +19,12 @@ public class App {
         //int output = rev.reverse(12345);
         //int output = rev.reverseLeet(12345);
         
-        PalindromeNumber p = new PalindromeNumber();
-        boolean output = p.isPalindrome(10);
+        // PalindromeNumber p = new PalindromeNumber();
+        // boolean output = p.isPalindrome(10);
+
+        ValidParentheses v = new ValidParentheses();
+        String input = System.console().readLine();
+        boolean output = v.isValid(input);
         System.out.println(output);
     }
 }
