@@ -22,9 +22,12 @@ public class App {
         // PalindromeNumber p = new PalindromeNumber();
         // boolean output = p.isPalindrome(10);
 
-        ValidParentheses v = new ValidParentheses();
-        String input = System.console().readLine();
-        boolean output = v.isValid(input);
+        // ValidParentheses v = new ValidParentheses();
+        // String input = System.console().readLine();
+        // boolean output = v.isValid(input);
+        
+        LongestCommonPrefix p = new LongestCommonPrefix();
+        String output = p.longestCommonPrefix(new String[] {"flower"});
         System.out.println(output);
     }
 }
