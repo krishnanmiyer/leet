@@ -26,8 +26,17 @@ public class App {
         // String input = System.console().readLine();
         // boolean output = v.isValid(input);
         
-        LongestCommonPrefix p = new LongestCommonPrefix();
-        String output = p.longestCommonPrefix(new String[] {"flower"});
-        System.out.println(output);
+        // LongestCommonPrefix p = new LongestCommonPrefix();
+        // String output = p.longestCommonPrefix(new String[] {"flower"});
+        
+        MergeSortedLists m = new MergeSortedLists();
+        ListNode l1 = new ListNode(1, new ListNode(2, new ListNode(4)));
+        ListNode l2 = new ListNode(1, new ListNode(3, new ListNode(4)));
+        ListNode output = m.mergeTwoLists(l1, l2);
+
+        while(output.next != null) {
+            System.out.println(output.val);
+            output = output.next;
+        }
     }
 }
