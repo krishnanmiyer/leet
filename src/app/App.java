@@ -28,7 +28,7 @@ public class App {
         
         // LongestCommonPrefix p = new LongestCommonPrefix();
         // String output = p.longestCommonPrefix(new String[] {"flower"});
-        
+        /*
         MergeSortedLists m = new MergeSortedLists();
         ListNode l1 = new ListNode(1, new ListNode(2, new ListNode(4)));
         ListNode l2 = new ListNode(1, new ListNode(3, new ListNode(4)));
@@ -38,5 +38,10 @@ public class App {
             System.out.println(output.val);
             output = output.next;
         }
+        */
+        RemoveElement r = new RemoveElement();
+        int output = r.removeElement(new int[] {0,1,2,2,3,0,4,2}, 2);
+        System.out.println(output);
+
     }
 }
